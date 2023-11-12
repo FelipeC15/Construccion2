@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"       
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd ">
+    
+    <bean id="controladorBusinessImp" class="Principal.ControladoresImp.ControladorBusinessImp" scope="prototype">
+    </bean>
+    
+    <bean id="controladorInput" class="Principal.ControladoresImp.ControladorInput" scope="prototype">
+    </bean>
+    
+    <bean id="controladorPersonaInput" class="Principal.ControladoresImp.ControladorPersonaInput" scope="prototype">
+    </bean>
+
+    <bean id="autorizado" class="Principal.ModeloImp.Autorizado" scope="prototype">
+    </bean>
+    
+    <bean id="club" class="Principal.ModeloImp.Club" scope="singleton">
+    </bean>
+    
+    <bean id="factura" class="Principal.ModeloImp.Factura" scope="prototype">
+    </bean>
+
+    <bean id="persona" class="Principal.ModeloImp.Persona" scope="prototype">
+    </bean>
+    
+    <bean id="socio" class="Principal.ModeloImp.Socio" scope="prototype">
+    </bean>
+        
+</beans>
